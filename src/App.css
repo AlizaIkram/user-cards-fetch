@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #0d1117; /* deep dark background */
+  color: #e1e4e8; /* soft light text */
+}
+
+.app {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+
+.user-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.user-card {
+  background: linear-gradient(145deg, #1b1f25, #111418);
+  border-radius: 15px;
+  padding: 25px;
+  width: 300px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.user-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 15px 25px rgba(0, 255, 200, 0.3);
+}
+
+.user-card h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #00ffd5; /* teal highlight for name */
+  margin-bottom: 10px;
+}
+
+.user-card hr {
+  border: none;
+  border-top: 1px solid #2a2f38;
+  margin: 10px 0 15px;
+}
+
+.user-card p {
+  font-size: 0.95rem;
+  margin: 6px 0;
+  line-height: 1.4;
+}
+
+.error {
+  color: #ff6b6b;
+  margin-bottom: 20px;
+}
+
+/* Responsive */
+@media (max-width: 1000px) {
+  .user-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 600px) {
+  .user-card {
+    width: 90%;
+  }
+}
